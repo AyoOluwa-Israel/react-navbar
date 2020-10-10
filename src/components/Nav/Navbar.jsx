@@ -8,9 +8,10 @@ const Nav = styled.nav `
   width: 100%;
   height: 55px;
   box-shadow: 1px 0px 5px 0px;
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .logo{
     padding-left: 4em; 
@@ -20,7 +21,12 @@ const Nav = styled.nav `
     height: 50px;
   }
 
-  @media
+  @media (max-width: 768px){
+    .logo{
+    padding-left: 0.7em; 
+  }
+  
+  }
 
 `;
 const Navbar = () => {

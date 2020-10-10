@@ -8,11 +8,13 @@ const Ul = styled.ul `
     flex-flow: row nowrap;
   li{
     padding: 18px 10px;
+    font-weight: 700;
   }
 
   @media (max-width: 768px){
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background: rgb(32,71,102);
+    background: linear-gradient(90deg, rgba(32,71,102,1) 0%, rgba(13,13,80,1) 47%, rgba(5,41,71,1) 100%);
     position: fixed;
     transform: ${({  open }) => open ? 'translateX(0)' : 'translateX(100%)' }; 
     top: 0;
@@ -24,6 +26,11 @@ const Ul = styled.ul `
 
   li{
     color: #fff;
+    text-align: center;
+  }
+  li:hover{
+    background-color: #fff;
+    color: #0D2538;
   }
 `;
 
