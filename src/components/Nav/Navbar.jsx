@@ -12,13 +12,14 @@ const Nav = styled.nav `
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 
   .logo{
     padding-left: 4em; 
   }
   img{
-    width: auto;
-    height: 50px;
+    width: 100px;
+    height: auto;
   }
 
   @media (max-width: 768px){
@@ -33,7 +34,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <img src="img/logo192.png" alt=""/>
+        <img src="img/logo.png" alt=""/>
       </div>
       <Burger/>
     </Nav>
